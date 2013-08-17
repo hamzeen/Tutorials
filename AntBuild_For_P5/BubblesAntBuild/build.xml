@@ -1,0 +1,55 @@
+<project name="BubbleAntBuild" default="main">
+<!-- Note: the jar will be created in the above name //-->
+    
+    <property name="src.dir" value="source"/>
+    <property name="lib.dir" value="lib"/>
+    <property name="build.dir" value="build"/>
+    <property name="classes.dir" value="${build.dir}/classes"/>
+    <property name="jar.dir" value="${build.dir}/jar"/>
+	
+	<!-- specify the main class name here //-->
+    <property name="main-class" value="Bubbles"/>
+    
+    <path id="classpath">
+        <fileset dir="${lib.dir}" includes="**/*.jar"/>
+        <fileset dir="." includes="**/*.dll"/>
+        <fileset dir="." includes="**/*.dylib"/>
+    </path>
+    
+    <target name="clean">
+		<!-- removes any directories created during previous build //-->
+        <delete dir="${jar.dir}"/>
+        <delete dir="${classes.dir}"/>
+        <delete dir="${build.dir}"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="${build.dir}"/>
+        <mkdir dir="${classes.dir}"/>
+        <mkdir dir="${jar.dir}"/>
+        <javac srcdir="${src.dir}" destdir="${classes.dir}" classpathref="classpath"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        
+        <jar destfile="${jar.dir}/${ant.project.name}.jar"
+        basedir="source/"
+        includes="**/*.class">
+        <manifest>
+            <attribute name="Main-Class" value="${main-class}"/>
+        </manifest>
+        </jar>
+    </target>
+    
+    <target name="run" depends="jar">
+        <java fork="true" classname="${main-class}">
+            <classpath>
+                <path refid="classpath"/>
+                <path location="${jar.dir}/${ant.project.name}.jar"/>
+            </classpath>
+        </java>
+    </target>
+    
+    <target name="main" depends="clean,run"/>
+
+</project>
