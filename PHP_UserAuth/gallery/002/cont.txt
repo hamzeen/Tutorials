@@ -1,0 +1,20 @@
+<ul id=\'gallery\'>
+<li>
+	<a rel=\'example_group\' href=\'../gallery/002/001.jpg\' title=\'Description\'><img alt=\'\' src=\'../gallery/002/001_s.jpg\' /></a>
+</li>
+<li>
+	<a rel=\'example_group\' href=\'../gallery/002/002.jpg\' title=\'\'><img alt=\'\' src=\'../gallery/002/002_s.jpg\' /></a>
+</li>
+<li>
+	<a rel=\'example_group\' href=\'../gallery/002/003.jpg\' title=\'\'><img alt=\'\' src=\'../gallery/002/003_s.jpg\' /></a>
+</li>
+<li>
+	<a rel=\'example_group\' href=\'../gallery/002/004.jpg\' title=\'\'><img alt=\'\' src=\'../gallery/002/004_s.jpg\' /></a>
+</li>
+<li>
+	<a class=\'last\' rel=\'example_group\' href=\'../gallery/002/005.jpg\' title=\'\'><img alt=\'\' src=\'../gallery/002/005_s.jpg\' /></a>
+</li>
+<li>
+	<a class=\'last\' rel=\'example_group\' href=\'../gallery/002/006.jpg\' title=\'\'><img alt=\'\' src=\'../gallery/002/006_s.jpg\' /></a>
+</li>
+</ul>

@@ -1,0 +1,127 @@
+
+-------------------------------------------------*/
+* { margin: 0; padding: 0; }
+:link,:visited { text-decoration:none }
+/*------- Firefox border ------------------------*/
+a:active, a:focus {outline: 0;}
+img{border:none;}
+
+#footer{
+	color: #cecece;
+	font-family: verdana;
+	font-size:11px;
+	padding: 4px;
+	width: 976px;
+	min-width:976px;
+	margin: 12px auto;
+	background: url(../img/transparent.png);
+}
+#footer a{
+	color:#bababa;
+	-webkit-transition: color 0.4s ease-in-out;
+	-moz-transition: color 0.4s ease-in-out;
+	-o-transition: color 0.4s ease-in-out;
+	-ms-transition: color 0.4s ease-in-out;
+	transition: color 0.4s ease-in-out;
+}
+#footer a:hover{
+color:#243239;
+}
+.footerHeads{
+	color: #cecece;
+}
+#footer p{
+text-align:left;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 2px 6px rgba(0, 0, 0, 0.2);
+	-ms-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 2px 6px rgba(0, 0, 0, 0.2);
+	-webkit-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 2px 6px rgba(0, 0, 0, 0.2);
+	-moz-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+/*-----------------------Credits----------------*/
+#credits{
+	clear:both;
+	height: 36px;
+	background: url(../img/border-h.png) repeat-x 900px 0px;
+}
+#copyright{
+	float:left;
+	width:520px;
+	text-align:left;
+	margin-top:10px;
+}
+
+/*-----------------------Social Media Icons----------------*/	
+ul#social_icons{
+	display:inline;
+	list-style: none;
+	padding: 0px;
+	margin:4px;
+	border:none;
+}
+ul#social_icons li{
+	padding-left: 10px;
+	display:inline;
+}
+ul#social_icons li img{
+	vertical-align:top;
+}
+
+/*-----------------------Clients----------------*/	
+#logos {
+    float: left;
+    /*margin-top: 5px;*/
+	margin: 30px auto;
+}
+#logos li {
+    float: left;
+    margin-left: 5px;
+	overflow:hidden;
+}
+#logos li a {
+    position: relative;
+    color: #e1e1e1;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.1em;
+    padding-left: 0.3em; padding-right: 0.3em;
+}
+
+
+/*-----------Recent Work vTicker-------------*/
+#listticker{
+	margin: 5px;
+	margin-right:10px;
+	height:140px;
+	overflow:hidden;
+	padding:1px;
+}
+#listticker li{
+	border:0; 
+	margin:0; 
+	padding:0; 
+	list-style:none;
+}
+#listticker li{
+	height:60px;
+	padding:5px;
+	list-style:none;
+}
+#listticker .news-title{
+	display:block;
+	font-weight:bold;
+	margin-bottom:4px;
+	font-size:11px;
+}
+#listticker .news-text{
+	display:block;
+	font-size:11px;
+}
+#listticker img{
+	float:left;
+	margin-right:12px;
+	padding:4px;
+	border:solid 1px #DEDEDE;
+	height: 55px;
+}

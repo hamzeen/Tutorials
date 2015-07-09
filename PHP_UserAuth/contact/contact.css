@@ -1,0 +1,117 @@
+#location_wrapper{
+	margin: 0 auto;
+	width:760px;
+}
+#map{
+	border: 6px solid #cecece; 
+	float:left; 
+	width:508px; 
+	height: 318px;
+}
+#contactme p{
+margin:0px;
+}
+
+input, button, select, textarea {
+margin-top: 5px;
+padding: 0px;
+}
+
+hr {
+  width: 80%;
+  margin: 10px auto;
+  margin-bottom: 12px;
+  background: url(../images/divider_up.png) no-repeat scroll center; 
+  height: 32px;
+  outline:none;
+  border:none;
+  clear:both;
+}
+
+#contactme{
+	margin-bottom: 30px;
+	margin-left:auto;
+	margin-right:auto;
+	width:760px;
+	
+	box-shadow: 0px 1px 2px rgba(50,10, 13, 0.2), 0px 2px 1px rgba(0, 0, 0, 0.4);
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+}
+#contactme:hover{
+	-moz-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+	-webkit-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+
+	box-shadow: 0px 1px 2px rgba(50,10, 13, 0.2), 0px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+#contactme form {
+/*green:#475B31*/
+background: #791221 url(contact.gif) center center;
+display: block;
+padding: 20px;
+width: 720px;
+overflow: hidden;
+min-height: 357px;
+}
+
+input, textarea, select {
+border: 1px solid black;
+font: normal 12px/21px "Lucida Grande", "Helvetica Neue", Helvetica, sans-serif;
+padding: 6px;
+width: 400px;
+background: rgba(24, 20, 18, .4);
+-moz-box-shadow: inset 1px 1px 3px #000, 0 0 1px #9F8863;
+-webkit-box-shadow: inset 1px 1px 3px #000, 0 0 1px #9F8863;
+box-shadow: inset 1px 1px 3px #000, 0 0 1px #9F8863;
+color: white;
+}
+
+label {
+float: left;
+display: block;
+width: 286px;
+text-align: right;
+font-weight: bold;
+font-size: 12px;
+line-height: 12px;
+padding-top: 11px;
+padding-right: 10px;
+color: #130E08;
+text-shadow: 0 1px 1px #7F6537;
+}
+
+div.button {
+border: 1px solid black;
+background: rgba(0, 0, 0, .5);
+-moz-box-shadow: inset 1px 1px 3px #000, 0 0 1px #9F8863;
+-webkit-box-shadow: inset 1px 1px 3px #000, 0 0 1px #9F8863;
+box-shadow: inset 1px 1px 3px #000, 0 0 1px #9F8863;
+display: block;
+margin-left: 296px;
+float: left;
+padding: 4px;
+}
+
+#submit {
+width: 114px;
+height: 30px;
+display: block;
+background: url(submit.png) no-repeat 0 0;
+border: 0px;
+cursor: pointer;
+float: left;
+}
+
+.message {
+font-size: 13px;
+padding: 0px 0px 0px 20px;
+text-align: center;
+width: 376px;
+color: #130E08;
+text-shadow: 0 1px 1px #7F6537;
+}

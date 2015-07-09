@@ -1,0 +1,116 @@
+#nav {
+	margin: 0px auto;
+	padding: 6px 6px 6px 6px;
+	/*background: #7d7d7d;*/
+	
+	border-radius: 0.2em;
+	-webkit-border-radius: 0.2em;
+	-moz-border-radius: 0.2em;
+	
+	box-shadow: 0px 0px 1px #aa99ff;
+	-webkit-box-shadow: 0px 0px 1px #aa99ff;
+	-moz-box-shadow: 0px 0px 1px #aa99ff;
+	
+	-webkit-transition: -webkit-box-shadow 0.6s ease-out;
+	-moz-transition: -moz-box-shadow 0.6s ease-out;
+	-o-transition: box-shadow 0.6s ease-out;
+}
+#nav:hover{
+	box-shadow: 0px 0px 4px #aa99ff;
+	-webkit-box-shadow: 0px 0px 4px #aa99ff;
+	-moz-box-shadow: 0px 0px 4px #aa99ff;
+
+}
+#nav li {
+	margin: 0 5px;
+	float: left;
+	position: relative;
+	list-style: none;
+}
+
+/* main level link */
+#nav a {
+	color: #e7e5e5;
+	text-decoration: none;
+	display: block;
+	padding:  8px 20px;
+	margin: 0;
+	text-shadow: 0 1px 1px rgba(0,0,0, .3);
+}
+
+
+/* main level link hover */
+#nav .current a, #nav li:hover > a {
+	/*background: #ddd;*/
+	background:#F0F0F0;
+	
+	color: #444;
+	text-shadow: 0 1px 0 rgba(255,255,255, 1);
+
+	border-radius: 0.15em;
+	-webkit-border-radius: 0.15em;
+	-moz-border-radius: 0.15em;
+	
+	-webkit-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+	-moz-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+	box-shadow: 0 1px 1px rgba(0,0,0, .2);
+
+}
+
+/* sub levels link hover */
+#nav ul li:hover,#nav ul li:hover a, #nav li:hover li a {
+	background: none;
+	border: none;
+	color: #666;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+}
+
+#nav ul a:hover {
+	background: #0078ff !important;
+	color: #fff !important;
+	text-shadow: 0 1px 1px rgba(0,0,0, .1);
+}
+#nav li:hover > ul {
+	display: block;
+	z-index: 9999;
+}
+
+/* level 2 list */
+#nav ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 185px;
+	position: absolute;
+	background: #ddd;
+	border: solid 1px #b4b4b4;
+	
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0, .3);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0, .3);
+	box-shadow: 0 1px 3px rgba(0,0,0, .3);
+	border-radius: 0.2em;
+}
+#nav ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+#nav ul a {
+	font-weight: normal;
+	text-shadow: 0 1px 0 #fff;
+}
+
+/* level 3 list */
+#nav ul ul {
+	left: 185px;
+	top: -1px;
+}
+
+/* clearfix */
+#nav:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+}

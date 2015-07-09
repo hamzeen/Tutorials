@@ -1,0 +1,37 @@
+.block .draghandle{
+	cursor: move;
+}
+#columns .target {
+	padding: 3px;
+	border: 2px dashed #ccc;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#columns .menu, #columns .blocks, #columns .sidebar{
+	width: 320px;
+	float: left;
+}
+#columns .column{
+	margin: 0 5px 0 5px;
+	min-height: 100px; /* set a min-height to ensure a target dropzone */
+}
+
+#columns .menu div h1,#columns .blocks div h1, #columns .sidebar div h1{
+	font-family: BlackJackRegular,Copse,Georgia,Times,serif;
+	padding:10px;
+	font-size: 2.1em;
+	color: #89d24D;
+	text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7), 0px 2px 6px rgba(0, 0, 0, 0.2);
+	border-bottom: 1px solid #A28F53;
+	line-height: 20px;
+}
+
+#columns .menu div, #columns .blocks div, #columns .sidebar div {
+	margin-top: 30px;
+	margin-left: 15px;
+	margin-bottom: 30px;
+	padding:10px;
+	box-shadow: 0 0 0 8px rgba(250, 210, 213, 0.2), 0 0 4px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 0 8px rgba(250, 210, 213, 0.2), 0px 0px 4px rgba(0, 0, 0, 0.5);
+	background: #153530 url(images/bg_texture.png);
+}
